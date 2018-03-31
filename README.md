@@ -1,7 +1,6 @@
 ### 说明：
 1. 使用create-react-app搭建
-2. create-react-app中按需引入Ant-Design
-出处：https://ant.design/docs/react/use-with-create-react-app-cn
+2. 实现create-react-app中按需引入Ant-Design，官方操作文档：https://ant.design/docs/react/use-with-create-react-app-cn
 3. 实现通过侧边栏导航Menu的Menu.Item控制Content部分的变化，详细说明地址：https://segmentfault.com/a/1190000014109139
 
 ### This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
