@@ -1,4 +1,6 @@
-### create-react-app中按需引入Ant-Design
+### 说明：
+1. 使用create-react-app搭建
+2. create-react-app中按需引入Ant-Design
 出处：https://ant.design/docs/react/use-with-create-react-app-cn
 
 ### This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
