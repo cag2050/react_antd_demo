@@ -5,7 +5,9 @@ import MyLayout from './components/MyLayout'
 class App extends Component {
   render() {
     return (
-      <MyLayout/>
+      <div className="App">
+        <MyLayout/>
+      </div>
     );
   }
 }

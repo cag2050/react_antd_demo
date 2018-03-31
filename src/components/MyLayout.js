@@ -38,7 +38,7 @@ class MyLayout extends React.Component {
           </Menu>
         </Sider>
         <Layout>
-          <Header style={{background: '#fff', padding: 0}}>
+          <Header style={{background: '#fff', paddingLeft: '20px'}}>
             <Icon
               className="trigger"
               type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
