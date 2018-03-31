@@ -2,9 +2,12 @@ import React from 'react'
 import {Layout, Menu, Icon} from 'antd';
 import {
   BrowserRouter as Router,
-  // Route,
+  Route,
+  Switch,
   Link
 } from 'react-router-dom'
+import ButtonDemo from './ButtonDemo'
+import InputDemo from './InputDemo'
 
 const {Header, Sider, Content} = Layout;
 
@@ -32,7 +35,7 @@ class MyLayout extends React.Component {
               <Icon type="user"/>
               <span>nav 1</span>
               <Router>
-                <Link to='/ssss'></Link>
+                <Link to='/'></Link>
               </Router>
             </Menu.Item>
             <Menu.Item key="2">
@@ -57,7 +60,12 @@ class MyLayout extends React.Component {
             />
           </Header>
           <Content style={{margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280}}>
-            Content
+            <Router>
+              <Switch>
+                <Route path='/aaa' component={ButtonDemo}></Route>
+                <Route path='/' component={InputDemo}></Route>
+              </Switch>
+            </Router>
           </Content>
         </Layout>
       </Layout>
