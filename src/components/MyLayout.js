@@ -1,9 +1,9 @@
 import React from 'react'
 import {Layout, Menu, Icon} from 'antd';
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Route,
-  Switch,
+  // Switch,
   Link
 } from 'react-router-dom'
 import ButtonDemo from './ButtonDemo'
@@ -15,6 +15,7 @@ class MyLayout extends React.Component {
   state = {
     collapsed: false,
   };
+
   toggle = () => {
     this.setState({
       collapsed: !this.state.collapsed,
@@ -34,16 +35,12 @@ class MyLayout extends React.Component {
             <Menu.Item key="1">
               <Icon type="user"/>
               <span>nav 1</span>
-              <Router>
-                <Link to='/'></Link>
-              </Router>
+              <Link to='/'></Link>
             </Menu.Item>
             <Menu.Item key="2">
               <Icon type="video-camera"/>
               <span>nav 2</span>
-              <Router>
-                <Link to='/aaa'></Link>
-              </Router>
+              <Link to='/aaa'></Link>
             </Menu.Item>
             <Menu.Item key="3">
               <Icon type="upload"/>
@@ -60,12 +57,8 @@ class MyLayout extends React.Component {
             />
           </Header>
           <Content style={{margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280}}>
-            <Router>
-              <Switch>
-                <Route path='/aaa' component={ButtonDemo}></Route>
-                <Route path='/' component={InputDemo}></Route>
-              </Switch>
-            </Router>
+            <Route path='/' exact component={ButtonDemo}></Route>
+            <Route path='/aaa' exact component={InputDemo}></Route>
           </Content>
         </Layout>
       </Layout>
