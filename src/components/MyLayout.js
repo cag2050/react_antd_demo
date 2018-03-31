@@ -1,5 +1,10 @@
 import React from 'react'
 import {Layout, Menu, Icon} from 'antd';
+import {
+  BrowserRouter as Router,
+  // Route,
+  Link
+} from 'react-router-dom'
 
 const {Header, Sider, Content} = Layout;
 
@@ -26,10 +31,16 @@ class MyLayout extends React.Component {
             <Menu.Item key="1">
               <Icon type="user"/>
               <span>nav 1</span>
+              <Router>
+                <Link to='/ssss'></Link>
+              </Router>
             </Menu.Item>
             <Menu.Item key="2">
               <Icon type="video-camera"/>
               <span>nav 2</span>
+              <Router>
+                <Link to='/aaa'></Link>
+              </Router>
             </Menu.Item>
             <Menu.Item key="3">
               <Icon type="upload"/>
