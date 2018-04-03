@@ -6,8 +6,13 @@ import {
   // Switch,
   Link
 } from 'react-router-dom'
-import ButtonDemo from './ButtonDemo'
-import InputDemo from './InputDemo'
+// 按需加载
+import async from '../async'
+let ButtonDemo = async(() => import("./ButtonDemo"));
+let InputDemo = async(() => import("./InputDemo"));
+
+// import ButtonDemo from './ButtonDemo'
+// import InputDemo from './InputDemo'
 
 const {Header, Sider, Content} = Layout;
 
