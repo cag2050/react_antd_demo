@@ -45,7 +45,7 @@ class MyLayout extends React.Component {
             <Menu.Item key="2">
               <Icon type="video-camera"/>
               <span>input</span>
-              <Link to='/aaa'></Link>
+              <Link to='/input'></Link>
             </Menu.Item>
             <Menu.Item key="3">
               <Icon type="upload"/>
@@ -63,7 +63,7 @@ class MyLayout extends React.Component {
           </Header>
           <Content style={{margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280}}>
             <Route path='/' exact component={ButtonDemo}></Route>
-            <Route path='/aaa' exact component={InputDemo}></Route>
+            <Route path='/input' exact component={InputDemo}></Route>
           </Content>
         </Layout>
       </Layout>
