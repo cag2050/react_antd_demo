@@ -1,4 +1,5 @@
 ### 说明：
+1. 弃用，参考新项目：https://github.com/cag2050/react_eject_antd_demo
 1. 引入了 react-app-rewired，没有运行 `npm run eject`
 1. 使用create-react-app搭建
 2. 实现create-react-app中按需引入Ant-Design，官方操作文档：https://ant.design/docs/react/use-with-create-react-app-cn
